@@ -18,7 +18,6 @@ app.use(express.urlencoded({extended : true}));
 app.use(cookieParser());
 app.use(cors());
 
-app.get("/")
 app.use('/auth',require('./Routes/Auth'));
 
 app.listen(PORT,()=>{
