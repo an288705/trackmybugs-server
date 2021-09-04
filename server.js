@@ -20,11 +20,6 @@ app.use(cors());
 
 app.use('/auth',require('./Routes/Auth'));
 
-if(process.env.NODE_ENV==='production')
-{
-    app.use(express.static('front-end/build'));
-}
-
 app.listen(PORT,()=>{
     console.log('listening on '+PORT);
 });
