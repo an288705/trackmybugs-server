@@ -87,7 +87,7 @@ route.put('/bug',(req,result)=>{
             result.send(bug);
         })
         .catch((err)=>{
-            if(err) result.status(400).send(err);
+            if(err) result.status(400).json(err);
         })
     })
     .delete('/bug',(req,result)=>{
