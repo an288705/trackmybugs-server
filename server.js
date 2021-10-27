@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const app = express();
 
+//from mac
+
 mongoose.connect(process.env.DB_URL,{useNewUrlParser : true, useUnifiedTopology : true},(err)=>{
     if(!err) return console.log('connected to DB')
 
